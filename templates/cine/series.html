@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'cine/css/stCatalogo.css' %}">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <h2 class="logotipo">PelisOnHome</h2>
+            <nav>
+                <a href="{% url 'home' %}">Inicio</a>
+                <a href="{% url 'peliculas' %}">Peliculas</a>
+                <a href="{% url 'series' %}">Series</a>
+                <a href="{% url 'estrenos' %}">Estrenos</a>
+                <a href="{% url 'proxestrenos' %}">Prox Estrenos</a>
+                <a href="{% url 'contacto' %}">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <div class="cuerpo">
+        <a title="crow" href="{% url 'crown' %}">
+            <img src="{% static 'cine/img/crow.jpg' %}" alt="crow" width="350" height="400"></a>
+
+        <a title="Dark" href="{% url 'dark' %}">
+            <img src="{% static 'cine/img/dark.jpg' %}" alt="Dark" width="350" height="400"></a>
+
+        <a title="dash" href="{% url 'dash' %}">
+            <img src="{% static 'cine/img/dash.jpg' %}" alt="dash" width="350" height="400"></a>
+
+        <a title="det" href="{% url 'ojos' %}">
+            <img src="{% static 'cine/img/detras.jpg' %}" alt="det" width="350" height="400"></a>
+
+        <a title="ginny" href="{% url 'ginny' %}">
+            <img src="{% static 'cine/img/ginny.jpg' %}" alt="ginny" width="350" height="400"></a>
+
+        <a title="haunt" href="{% url 'haunting' %}">
+            <img src="{% static 'cine/img/haunting.jpg' %}" alt="haunt" width="350" height="400"></a>
+
+        <a title="holl" href="{% url 'hollywood' %}">
+            <img src="{% static 'cine/img/hollywood.jpg' %}" alt="holl" width="350" height="400"></a>
+
+        <a title="lupin" href="{% url 'lupin' %}">
+            <img src="{% static 'cine/img/lupin.jpg' %}" alt="lupin" width="350" height="400"></a>
+
+        <a title="otto" href="{% url 'ottoman' %}">
+            <img src="{% static 'cine/img/ottoman.jpg' %}" alt="otto" width="350" height="400"></a>
+
+        <a title="perd" href="{% url 'perdida' %}">
+            <img src="{% static 'cine/img/perdida.jpg' %}" alt="perd" width="350" height="400"></a>
+
+        <a title="rev" href="{% url 'revolucion' %}">
+            <img src="{% static 'cine/img/revolucion.jpg' %}" alt="rev" width="350" height="400"></a>
+
+        <a title="strange" href="{% url 'stranger' %}">
+            <img src="{% static 'cine/img/stranger.jpg' %}" alt="strange" width="350" height="400"></a>
+
+        <a title="night" href="{% url 'night' %}">
+            <img src="{% static 'cine/img/the_night.jpg' %}" alt="night" width="350" height="400"></a>
+
+        <a title="walk" href="{% url 'walking' %}">
+            <img src="{% static 'cine/img/the_walking.jpg' %}" alt="walk" width="350" height="400"></a>
+
+        <a title="wit" href="{% url 'witcher' %}">
+            <img src="{% static 'cine/img/the_witcher.jpeg' %}" alt="wit" width="350" height="400"></a>
+
+        <a title="trib" href="{% url 'tribu' %}">
+            <img src="{% static 'cine/img/tribus.jpg' %}" alt="trib" width="350" height="400"></a>
+    </div>
+
+    <footer>
+        <nav>
+            <h4>
+                <a href="{% url 'home' %}">Inicio</a> &nbsp; <a href="{% url 'contacto' %}">Contacto</a>
+            </h4>
+
+            <h4>Derechos Reservados &copy;2020 <br> Email: Pelishome@gmail.com <br> www.pelisOnhome.com</h4><br>
+            <a href=" http://www.facebook.com ">
+                <img src="{% static 'cine/img/facebook.png' %}  ">
+            </a>
+            <a href="http://www.twitter.com ">
+                <img src="{% static 'cine/img/twitter2.png' %} ">
+            </a>
+            <a href="https://www.instagram.com/?hl=es-la ">
+                <img src="{% static 'cine/img/insta.png' %}">
+            </a>
+            <a href="https://www.youtube.com/ ">
+                <img src="{% static 'cine/img/youtube.png' %} ">
+            </a>
+
+
+    </footer>
+</body>
+
+</html>

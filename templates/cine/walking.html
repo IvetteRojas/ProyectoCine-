@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'cine/css/stDescCatalogo.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>The Walking Dead </title>
+
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <h2 class="logotipo">PelisOnHome</h2>
+            <nav>
+                <a href="{% url 'home' %}">Inicio</a>
+                <a href="{% url 'peliculas' %}">Peliculas</a>
+                <a href="{% url 'series' %}">Series</a>
+                <a href="{% url 'estrenos' %}">Estrenos</a>
+                <a href="{% url 'proxestrenos' %}">Prox Estrenos</a>
+                <a href="{% url 'contacto' %}">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <img src="{% static 'cine/img/the_walking.jpg' %}" alt="walk" width="350" height="400">
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YI6AtpWQM3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p id="texto">The Walking Dead tiene lugar después del inicio de un apocalipsis zombi mundial. Los zombis, coloquialmente llamados «caminantes», se arrastran hacia los humanos vivos y otras criaturas para comerlos; se sienten atraídos por el ruido, como los disparos,
+        y por diferentes aromas, por ejemplo humanos.</p>
+
+    <footer>
+        <nav>
+            <h4>
+                <a href="{% url 'home' %}">Inicio</a> &nbsp; <a href="{% url 'contacto' %}">Contacto</a>
+            </h4>
+
+            <h4>Derechos Reservados &copy;2020 <br> Email: Pelishome@gmail.com <br> www.pelisOnhome.com</h4><br>
+            <a href=" http://www.facebook.com ">
+                <img src="{% static 'cine/img/facebook.png' %}  ">
+            </a>
+            <a href="http://www.twitter.com ">
+                <img src="{% static 'cine/img/twitter2.png' %} ">
+            </a>
+            <a href="https://www.instagram.com/?hl=es-la ">
+                <img src="{% static 'cine/img/insta.png' %}">
+            </a>
+            <a href="https://www.youtube.com/ ">
+                <img src="{% static 'cine/img/youtube.png' %} ">
+            </a>
+
+    </footer>
+</body>
+
+</html>

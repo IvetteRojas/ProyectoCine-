@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'cine/css/stDescCatalogo.css' %}" />
+    <title>La mujer Maravilla</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor">
+            <h2 class="logotipo">PelisOnHome</h2>
+            <nav>
+                <a href="{% url 'home' %}">Inicio</a>
+                <a href="{% url 'peliculas' %}">Peliculas</a>
+                <a href="{% url 'series' %}">Series</a>
+                <a href="{% url 'estrenos' %}">Estrenos</a>
+                <a href="{% url 'proxestrenos' %}">Prox Estrenos</a>
+                <a href="{% url 'contacto' %}">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="video">
+            <h2>La mujer Maravilla</h2>
+            <iframe width="600" height="500" src="https://www.youtube.com/embed/45FAax4W850" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="descripcion">
+        <img src="{% static 'cine/img/mujer_maravilla.jpg' %}" alt="mj1" width="350" height="400">
+        <p>Sipnosis:La Mujer Maravilla se encuentra en un conflicto con la Unión Soviética durante la Guerra Fría durante la década de 1980 y encuentra a dos adversarios formidables: Max Lord y el Cheetah.</p>
+        <p>Título: Mujer Maravilla 1984 | Wonder Woman 1984</p>
+        <p>Género: Superhéroes | Acción | Aventura</p>
+        <p>Duración: 151 minutos</p>
+        <p>Audio:Latino e Inglés subtitulada</p>
+        <p>Director: Patty Jenkins</p>
+        <p>Elenco: Charles Roven, Deborah Snyder, Zack Snyder, Patty Jenkins, Gal Gado, Stephen Jones</p>
+    </div>
+
+    <footer>
+        <nav>
+            <h4>
+                <a href="{% url 'home' %}">Inicio</a> &nbsp; <a href="{% url 'contacto' %}">Contacto</a>
+            </h4>
+
+            <h4>Derechos Reservados &copy;2020 <br> Email: Pelishome@gmail.com <br> www.pelisOnhome.com</h4><br>
+            <a href=" http://www.facebook.com ">
+                <img src="{% static 'cine/img/facebook.png' %}">
+            </a>
+            <a href="http://www.twitter.com ">
+                <img src="{% static 'cine/img/twitter2.png' %}">
+            </a>
+            <a href="https://www.instagram.com/?hl=es-la ">
+                <img src="{% static 'cine/img/insta.png' %} ">
+            </a>
+            <a href="https://www.youtube.com/ ">
+                <img src="{% static 'cine/img/youtube.png' %}">
+            </a>
+
+    </footer>
+</body>
+
+</html>

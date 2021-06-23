@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'cine/css/stDescCatalogo.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Space Jam 2</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="contenedor">
+            <h2 class="logotipo">PelisOnHome</h2>
+            <nav>
+                <a href="{% url 'home' %}">Inicio</a>
+                <a href="{% url 'peliculas' %}">Peliculas</a>
+                <a href="{% url 'series' %}">Series</a>
+                <a href="{% url 'estrenos' %}">Estrenos</a>
+                <a href="{% url 'proxestrenos' %}">Prox Estrenos</a>
+                <a href="{% url 'contacto' %}">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <img src="{% static 'cine/img/space.jpg' %}" alt="spa" width="350" height="400">
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/z7PSyWuArVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <p>¡Bienvenido al partido del siglo! El campeón de la NBA e ícono mundial LeBron James se embarca en una aventura épica junto al Tune Bugs Bunny en el evento animado / de acción en vivo "Space Jam: Una Nueva Era", del director Malcolm D. Lee y un equipo
+        de cine innovador que incluye a Ryan Coogler y Maverick Carter. Este viaje de transformación es el resultado de una mezcla maníaca entre dos mundos que, al final, revela hasta dónde están dispuestos a llegar algunos padres para conectar con sus
+        hijos. Cuando LeBron y su pequeño hijo Dom quedan atrapados en un espacio digital por una IA (inteligencia artificial) deshonesta, LeBron debe regresarlos a casa sanos y salvos guiado por Bugs, Lola Bunny y a toda la banda de indisciplinados Looney
+        Tunes hacia la victoria sobre los campeones digitalizados de la IA en la cancha: una lista mejorada de estrellas profesionales del basquetbol como nunca antes lo habías visto. Son Tunes versus Goons en el desafío más importante de su vida, que
+        redefinirá el vínculo de LeBron con su hijo y arrojará luz sobre el poder de ser uno mismo. Todos listos para la acción destruyen las convenciones, potencian sus talentos únicos y sorprenden incluso al "Rey" James jugando basquetbol a su manera.
+        Resultado de imagen para space jam sinopsis
+    </p>
+    <footer>
+        <nav>
+            <h4>
+                <a href="{% url 'home' %}">Inicio</a> &nbsp; <a href="{% url 'contacto' %}">Contacto</a>
+            </h4>
+
+            <h4>Derechos Reservados &copy;2020 <br> Email: Pelishome@gmail.com <br> www.pelisOnhome.com</h4><br>
+            <a href=" http://www.facebook.com ">
+                <img src="{% static 'cine/img/facebook.png' %}  ">
+            </a>
+            <a href="http://www.twitter.com ">
+                <img src="{% static 'cine/img/twitter2.png' %} ">
+            </a>
+            <a href="https://www.instagram.com/?hl=es-la ">
+                <img src="{% static 'cine/img/insta.png' %}">
+            </a>
+            <a href="https://www.youtube.com/ ">
+                <img src="{% static 'cine/img/youtube.png' %} ">
+            </a>
+
+    </footer>
+</body>
+
+</html>
