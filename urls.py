@@ -1,75 +1,22 @@
-from django.urls import path
-from .views import antlers, assis, ava, avpresa, batman, black, bob, born, bosque, brujas, cace, cazadores, chicas, cielo, conjuro3, crown, cuidado, dark, dash, dune, emma, escape, fragmentos, friend, fuga, ginny, greenland, haunting, hitmans, hollywood, home, estrenos, contacto, hunt2, invisible, justice, kings, kombat, lobo, lupin, maravilla, marksman, mulan, mutants, mym, night, ojos, orden, ottoman, peliculas, perdida, presencia, prin, proxestrenos, revolucion, samaritan, series, godzilla, space, stranger, tenet, time, tribu, vast, venganza, venom2, voces, walking, witcher, xico
+"""proyectoCine URL Configuration
+
+The `urlpatterns` list routes URLs to views. For more information please see:
+    https://docs.djangoproject.com/en/3.1/topics/http/urls/
+Examples:
+Function views
+    1. Add an import:  from my_app import views
+    2. Add a URL to urlpatterns:  path('', views.home, name='home')
+Class-based views
+    1. Add an import:  from other_app.views import Home
+    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
+Including another URLconf
+    1. Import the include() function: from django.urls import include, path
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+"""
+from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
-    path('',home,name='home'),
-    path('/estrenos',estrenos,name='estrenos'),
-    path('/contacto',contacto,name='contacto'),
-    path('/peliculas',peliculas,name='peliculas'),
-    path('/proxestrenos',proxestrenos,name='proxestrenos'),
-    path('/series',series,name='series'),
-    path('/godzilla',godzilla,name='godzilla'),
-    path('/maravilla',maravilla,name='maravilla'),
-    path('/ava',ava,name='ava'),
-    path('/avpresa',avpresa,name='avpresa'),
-    path('/batman',batman,name='batman'),
-    path('/bob',bob,name='bob'),
-    path('/bosque',bosque,name='bosque'),
-    path('/chicas',chicas,name='chicas'),
-    path('/fragmentos',fragmentos,name='fragmentos'),
-    path('/cazadores',cazadores,name='cazadores'),
-    path('/invisible',invisible,name='invisible'),
-    path('/brujas',brujas,name='brujas'),
-    path('/justice',justice,name='justice'),
-    path('/greenland',greenland,name='greenland'),
-    path('/presencia',presencia,name='presencia'),
-    path('/voces',voces,name='voces'),
-    path('/crown',crown,name='crown'),
-    path('/dark',dark,name='dark'),
-    path('/dash',dash,name='dash'),
-    path('/ojos',ojos,name='ojos'),
-    path('/ginny',ginny,name='ginny'),
-    path('/haunting',haunting,name='haunting'),
-    path('/hollywood',hollywood,name='hollywood'),
-    path('/lupin',lupin,name='lupin'),
-    path('/night',night,name='night'),
-    path('/ottoman',ottoman,name='ottoman'),
-    path('/perdida',perdida,name='perdida'),
-    path('/revolucion',revolucion,name='revolucion'),
-    path('/stranger',stranger,name='stranger'),
-    path('/tribu',tribu,name='tribu'),
-    path('/walking',walking,name='walking'),
-    path('/witcher',witcher,name='witcher'),
-    path('/assis',assis,name='assis'),
-    path('/cace',cace,name='cace'),
-    path('/cielo',cielo,name='cielo'),
-    path('/cuidado',cuidado,name='cuidado'),
-    path('/emma',emma,name='emma'),
-    path('/fuga',fuga,name='fuga'),
-    path('/hunt2',hunt2,name='hunt2'),
-    path('/kings',kings,name='kings'),
-    path('/lobo',lobo,name='lobo'),
-    path('/mulan',mulan,name='mulan'),
-    path('/mutants',mutants,name='mutants'),
-    path('/orden',orden,name='orden'),
-    path('/tenet',tenet,name='tenet'),
-    path('/vast',vast,name='vast'),
-    path('/venganza',venganza,name='venganza'),
-    path('/xico',xico,name='xico'),
-    path('/antlers',antlers,name='antlers'),
-    path('/black',black,name='black'),
-    path('/born',born,name='born'),
-    path('/conjuro3',conjuro3,name='conjuro3'),
-    path('/dune',dune,name='dune'),
-    path('/escape',escape,name='escape'),
-    path('/friend',friend,name='friend'),
-    path('/hitmans',hitmans,name='hitmans'),
-    path('/kombat',kombat,name='kombat'),
-    path('/mym',mym,name='mym'),
-    path('/marksman',marksman,name='marksman'),
-    path('/prin',prin,name='prin'),
-    path('/space',space,name='space'),
-    path('/time',time,name='time'),
-    path('/venom2',venom2,name='venom2'),
-    path('/samaritan',samaritan,name='samaritan')
+    path('admin/', admin.site.urls),
+    path('',include('cine.urls')),
 ]
